@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Física dos Foguetes e Missões Espaciais - Prof. William Mendonça</title>
+<style>
+  @page { margin: 2cm; }
+  body { font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 1.35; color: #000; }
+  h1, h2, h3, h4 { font-weight: 700; margin: 0.6em 0 0.3em 0; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 18px; }
+  h4 { font-size: 16px; }
+  p, li { font-size: 12pt; }
+  .center { text-align: center; }
+  .subtitle { font-size: 14pt; margin-top: 0.3em; }
+  .muted { color: #333; }
+  .toc a { text-decoration: none; color: #000; }
+  .toc li { margin: 4px 0; }
+  .page-break { page-break-before: always; }
+  table { border-collapse: collapse; width: 100%; font-size: 12pt; }
+  th, td { border: 1px solid #000; padding: 6px 8px; vertical-align: top; }
+  .note { background: #f5f5f5; padding: 8px 10px; border-left: 3px solid #000; }
+  .small { font-size: 10pt; }
+  .foot { margin-top: 1.2em; font-size: 10pt; }
+</style>
+</head>
+<body>
+
+<section id="capa">
+  <h1 class="center">FÍSICA DOS FOGUETES E MISSÕES ESPACIAIS</h1>
+  <p class="center subtitle">Prof. William Mendonça – Química e Física</p>
+  <p class="center muted">Ensino Médio – 2º Ano</p>
+</section>
+
+<div class="page-break"></div>
+
+<section id="sumario">
+  <h2>SUMÁRIO</h2>
+  <ol class="toc">
+    <li><a href="#cap1">1. Introdução à Astronáutica</a>
+      <ol>
+        <li><a href="#1-1">1.1 O sonho humano de alcançar as estrelas</a></li>
+        <li><a href="#1-2">1.2 O que é astronáutica</a></li>
+        <li><a href="#1-3">1.3 Importância da astronáutica</a></li>
+        <li><a href="#1-4">1.4 Linha do tempo resumida</a></li>
+        <li><a href="#1-5">1.5 Conclusão do capítulo</a></li>
+      </ol>
+    </li>
+    <li><a href="#cap2">2. Física dos Foguetes: Isp, Δv, MR e Energia</a>
+      <ol>
+        <li><a href="#2-1">2.1 Como um foguete se move</a></li>
+        <li><a href="#2-2">2.2 Impulso específico (Isp)</a></li>
+        <li><a href="#2-3">2.3 Delta-V (Δv)</a></li>
+        <li><a href="#2-4">2.4 Razão de massas (MR)</a></li>
+        <li><a href="#2-5">2.5 Energia necessária</a></li>
+        <li><a href="#2-6">2.6 Fração estrutural (ε)</a></li>
+        <li><a href="#2-7">2.7 Carga útil (Payload)</a></li>
+        <li><a href="#2-8">2.8 Crédito de rotação da Terra</a></li>
+      </ol>
+    </li>
+    <li><a href="#cap3">3. Estágios e Engenharia de Lançamento</a>
+      <ol>
+        <li><a href="#3-1">3.1 Por que foguetes têm estágios?</a></li>
+        <li><a href="#3-2">3.2 Funcionamento dos estágios</a></li>
+        <li><a href="#3-3">3.3 Divisão de Δv e eficiência</a></li>
+        <li><a href="#3-4">3.4 Exemplo prático – dois estágios para LEO</a></li>
+        <li><a href="#3-5">3.5 Reutilização de estágios</a></li>
+        <li><a href="#3-6">3.6 Engenharia e desafios do lançamento</a></li>
+        <li><a href="#3-7">3.7 Comparação – 1, 2 e 3 estágios</a></li>
+      </ol>
+    </li>
+    <li><a href="#cap4">4. Missões Espaciais e Linha do Tempo</a>
+      <ol>
+        <li><a href="#4-1">4.1 A corrida espacial</a></li>
+        <li><a href="#4-2">4.2 Tipos de missões espaciais</a></li>
+        <li><a href="#4-3">4.3 Etapas de uma missão</a></li>
+        <li><a href="#4-4">4.4 Linha do tempo da exploração</a></li>
+        <li><a href="#4-5">4.5 O futuro da exploração espacial</a></li>
+      </ol>
+    </li>
+    <li><a href="#cap5">5. Exercícios, Glossário e Referências</a>
+      <ol>
+        <li><a href="#5-1">5.1 Exercícios – Revisão de Conhecimentos</a></li>
+        <li><a href="#5-2">5.2 Glossário de Termos Essenciais</a></li>
+        <li><a href="#5-3">5.3 Referências Bibliográficas</a></li>
+      </ol>
+    </li>
+  </ol>
+</section>
+
+<div class="page-break"></div>
+
+<section id="cap1">
+  <h1>CAPÍTULO 1 – INTRODUÇÃO À ASTRONÁUTICA</h1>
+  <h2 id="1-1">1.1 O sonho humano de alcançar as estrelas</h2>
+  <p>Desde as primeiras civilizações, o céu sempre fascinou a humanidade. Povos antigos observavam os movimentos dos astros para criar calendários e orientar a vida em sociedade. A astronáutica nasce desse sonho e o transforma em realidade por meio da ciência e da engenharia.</p>
+  <h2 id="1-2">1.2 O que é astronáutica?</h2>
+  <p><em>Astronáutica</em> vem do grego: <strong>astron</strong> (estrela) + <strong>nautes</strong> (navegante) — “navegar entre as estrelas”. Ela abrange técnicas para construir e lançar foguetes, colocar satélites em órbita, enviar sondas e realizar missões tripuladas.</p>
+  <h2 id="1-3">1.3 Importância da astronáutica</h2>
+  <ul>
+    <li><strong>Comunicação:</strong> internet, telefonia e TV por satélite.</li>
+    <li><strong>Meteorologia:</strong> monitoramento climático e de desastres.</li>
+    <li><strong>Observação da Terra:</strong> agricultura, meio ambiente e defesa.</li>
+    <li><strong>Pesquisa científica:</strong> avanços em materiais, medicina e física.</li>
+  </ul>
+  <h2 id="1-4">1.4 Linha do tempo resumida</h2>
+  <table>
+    <thead><tr><th>Ano</th><th>Evento</th><th>Importância</th></tr></thead>
+    <tbody>
+      <tr><td>1944</td><td>V-2 (Alemanha)</td><td>Primeiro foguete a atingir a borda do espaço</td></tr>
+      <tr><td>1957</td><td>Sputnik 1 (URSS)</td><td>Primeiro satélite artificial</td></tr>
+      <tr><td>1961</td><td>Yuri Gagarin (URSS)</td><td>Primeiro humano no espaço</td></tr>
+      <tr><td>1969</td><td>Apollo 11 (EUA)</td><td>Primeira caminhada humana na Lua</td></tr>
+      <tr><td>1998</td><td>ISS</td><td>Maior laboratório espacial em órbita</td></tr>
+      <tr><td>2010</td><td>Falcon 9 (SpaceX)</td><td>Foguete reutilizável operacional</td></tr>
+      <tr><td>2023</td><td>Artemis I (NASA)</td><td>Retomada das missões lunares</td></tr>
+    </tbody>
+  </table>
+  <h2 id="1-5">1.5 Conclusão</h2>
+  <p>A astronáutica une ciência, tecnologia e imaginação, permitindo explorar o espaço além da atmosfera terrestre.</p>
+</section>
+
+<div class="page-break"></div>
+
+<section id="cap2">
+  <h1>CAPÍTULO 2 – FÍSICA DOS FOGUETES: ISP, ΔV, MR E ENERGIA</h1>
+
+  <h2 id="2-1">2.1 Como um foguete se move</h2>
+  <p>Baseado na Terceira Lei de Newton: para toda ação, há uma reação igual e oposta. O motor expele gases para trás; o foguete é empurrado para frente.</p>
+
+  <h2 id="2-2">2.2 Impulso específico (Isp)</h2>
+  <pre class="small">Isp = F / (ṁ · g₀)</pre>
+  <p>Valores típicos: sólidos ~250 s; methalox ~370 s; hydrolox ~450 s; iônicos &gt; 3000 s.</p>
+
+  <h2 id="2-3">2.3 Delta-V (Δv)</h2>
+  <pre class="small">Δv = vₑ · ln(m₀ / m_f)</pre>
+
+  <h3 id="2-3a">2.3.1 Equação de Tsiolkovsky — Explicação e Exemplos</h3>
+  <p>A <strong>Equação de Tsiolkovsky</strong> relaciona a variação de velocidade de um foguete (<strong>Δv</strong>) à sua massa inicial (<em>m₀</em>), massa final (<em>m_f</em>) e velocidade de exaustão dos gases (<em>vₑ</em>):</p>
+  <pre class="small">Δv = vₑ · ln(m₀ / m_f)</pre>
+  <ul>
+    <li><strong>Δv</strong>: “quanto de velocidade” o foguete consegue ganhar ao longo do voo.</li>
+    <li><strong>vₑ</strong>: velocidade com que os gases são expelidos (quanto maior, mais eficiente o motor).</li>
+    <li><strong>m₀</strong>: massa do foguete cheio (estrutura + combustível + carga útil).</li>
+    <li><strong>m_f</strong>: massa do foguete ao final da queima (estrutura + carga útil).</li>
+  </ul>
+  <p class="note"><strong>Intuição:</strong> Δv aumenta quando o motor é mais eficiente (vₑ maior) e quando o foguete perde muita massa ao queimar combustível (m₀ ≫ m_f).</p>
+
+  <h4 id="2-3b">Tabela comparativa — Δv segundo Tsiolkovsky</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Massa inicial (m₀)</th>
+        <th>Massa final (m_f)</th>
+        <th>vₑ (m/s)</th>
+        <th>Δv (m/s)</th>
+        <th>Interpretação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.000 kg</td>
+        <td>500 kg</td>
+        <td>2.000</td>
+        <td>ln(2)×2000 ≈ <strong>2.772</strong></td>
+        <td>Pequeno foguete experimental; Δv baixo.</td>
+      </tr>
+      <tr>
+        <td>1.000 kg</td>
+        <td>200 kg</td>
+        <td>2.000</td>
+        <td>ln(5)×2000 ≈ <strong>3.218</strong></td>
+        <td>Mais combustível queimado → Δv maior (suborbital).</td>
+      </tr>
+      <tr>
+        <td>1.000 kg</td>
+        <td>200 kg</td>
+        <td>3.000</td>
+        <td>ln(5)×3000 ≈ <strong>4.827</strong></td>
+        <td>Mesmo foguete com motor mais eficiente → Δv maior (LEO possível).</td>
+      </tr>
+      <tr>
+        <td>100.000 kg</td>
+        <td>20.000 kg</td>
+        <td>3.000</td>
+        <td>ln(5)×3000 ≈ <strong>4.827</strong></td>
+        <td>Foguete médio com boa razão de massas (LEO).</td>
+      </tr>
+      <tr>
+        <td>500.000 kg</td>
+        <td>50.000 kg</td>
+        <td>3.000</td>
+        <td>ln(10)×3000 ≈ <strong>6.909</strong></td>
+        <td>Foguete pesado e eficiente → órbitas mais altas.</td>
+      </tr>
+      <tr>
+        <td>500.000 kg</td>
+        <td>50.000 kg</td>
+        <td>4.500</td>
+        <td>ln(10)×4500 ≈ <strong>10.363</strong></td>
+        <td>Alta eficiência + boa razão → escape da Terra possível.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="2-4">2.4 Razão de massas (MR)</h2>
+  <pre class="small">MR = m₀ / m_f</pre>
+  <p>Pequenos foguetes: 3–5; orbitais modernos: 5–10; interplanetários: &gt;10.</p>
+
+  <h2 id="2-5">2.5 Energia necessária</h2>
+  <pre class="small">E = (1/2) · m · v²</pre>
+  <p>Para 1 kg: LEO (~7,9 km/s) ≈ 31 MJ; escape (~11,2 km/s) ≈ 63 MJ.</p>
+
+  <h2 id="2-6">2.6 Fração estrutural (ε)</h2>
+  <pre class="small">ε = m_estrutura / m₀</pre>
+  <p>Estrutura pesada: 10–12%; moderna: 4–7%.</p>
+
+  <h2 id="2-7">2.7 Carga útil (Payload)</h2>
+  <p>Geralmente 1–5% da massa de decolagem.</p>
+
+  <h2 id="2-8">2.8 Crédito de rotação da Terra</h2>
+  <p>Lançar a leste próximo ao Equador rende ~463 m/s de velocidade “grátis”.</p>
+</section>
+
+<div class="page-break"></div>
+
+<section id="cap3">
+  <h1>CAPÍTULO 3 – ESTÁGIOS E ENGENHARIA DE LANÇAMENTO</h1>
+  <h2 id="3-1">3.1 Por que foguetes têm estágios?</h2>
+  <p>Descartar massa vazia aumenta a eficiência e reduz custos.</p>
+  <h2 id="3-2">3.2 Funcionamento dos estágios</h2>
+  <ul>
+    <li>Estágio 1: empuxo inicial, vence gravidade e arrasto.</li>
+    <li>Estágio 2: aceleração no vácuo, inserção em órbita.</li>
+    <li>Estágio 3: manobras finais.</li>
+  </ul>
+  <h2 id="3-3">3.3 Divisão de Δv e eficiência</h2>
+  <p>Regra prática: 1º ~1/3; 2º ~1/2; 3º ~restante.</p>
+  <h2 id="3-4">3.4 Exemplo – dois estágios para LEO</h2>
+  <p>Δv total ~9,4 km/s; Estágio 1 ~3,0; Estágio 2 ~6,4.</p>
+  <h2 id="3-5">3.5 Reutilização de estágios</h2>
+  <p>Reduz custos e aumenta frequência de lançamentos.</p>
+  <h2 id="3-6">3.6 Engenharia e desafios</h2>
+  <ul>
+    <li>Massa total e fração estrutural</li>
+    <li>Tipo/quantidade de combustível</li>
+    <li>Número de estágios</li>
+    <li>Trajetória e perdas</li>
+    <li>Atmosfera e base de lançamento</li>
+  </ul>
+  <h2 id="3-7">3.7 Comparação – 1, 2 e 3 estágios</h2>
+  <table>
+    <thead><tr><th>Configuração</th><th>Vantagens</th><th>Desvantagens</th></tr></thead>
+    <tbody>
+      <tr><td>1 estágio</td><td>Simples e barato</td><td>Baixa eficiência</td></tr>
+      <tr><td>2 estágios</td><td>Bom equilíbrio</td><td>Mais complexo</td></tr>
+      <tr><td>3 estágios</td><td>Alta eficiência</td><td>Complexo/caro</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<div class="page-break"></div>
+
+<section id="cap4">
+  <h1>CAPÍTULO 4 – MISSÕES ESPACIAIS E LINHA DO TEMPO</h1>
+  <h2 id="4-1">4.1 A corrida espacial</h2>
+  <ul>
+    <li>1957 – Sputnik 1 (URSS): 1º satélite</li>
+    <li>1961 – Yuri Gagarin (URSS): 1º humano no espaço</li>
+    <li>1969 – Apollo 11 (EUA): 1º pouso na Lua</li>
+    <li>1971 – Salyut 1 (URSS): 1ª estação</li>
+    <li>1981 – Ônibus espacial (EUA)</li>
+    <li>1998 – ISS</li>
+    <li>2010 – Falcon 9</li>
+    <li>2023 – Artemis I</li>
+  </ul>
+  <h2 id="4-2">4.2 Tipos de missões</h2>
+  <ul>
+    <li>Orbitais – comunicação, observação, pesquisa</li>
+    <li>Lunares – exploração da Lua</li>
+    <li>Interplanetárias – estudo de planetas/luas</li>
+    <li>Científicas – telescópios e cosmologia</li>
+  </ul>
+  <h2 id="4-3">4.3 Etapas de uma missão</h2>
+  <ol>
+    <li>Planejamento</li>
+    <li>Desenvolvimento</li>
+    <li>Lançamento</li>
+    <li>Operação</li>
+    <li>Encerramento</li>
+  </ol>
+  <h2 id="4-4">4.4 Linha do tempo da exploração</h2>
+  <table>
+    <thead><tr><th>Ano</th><th>Marco</th><th>Descrição</th></tr></thead>
+    <tbody>
+      <tr><td>1944</td><td>V-2</td><td>Ultrapassa 100 km</td></tr>
+      <tr><td>1957</td><td>Sputnik 1</td><td>Primeiro satélite</td></tr>
+      <tr><td>1961</td><td>Vostok 1</td><td>1º homem no espaço</td></tr>
+      <tr><td>1969</td><td>Apollo 11</td><td>1º pouso lunar tripulado</td></tr>
+      <tr><td>1977</td><td>Voyager 1 e 2</td><td>Exploram o Sistema Solar</td></tr>
+      <tr><td>1998</td><td>ISS</td><td>Estação em órbita</td></tr>
+      <tr><td>2010</td><td>Falcon 9</td><td>Reutilização moderna</td></tr>
+      <tr><td>2023</td><td>Artemis I</td><td>Retorno às missões lunares</td></tr>
+    </tbody>
+  </table>
+  <h2 id="4-5">4.5 O futuro</h2>
+  <ul>
+    <li>Bases na Lua</li>
+    <li>Missões a Marte</li>
+    <li>Recursos de asteroides</li>
+    <li>Sondas interestelares</li>
+  </ul>
+</section>
+
+<div class="page-break"></div>
+
+<section id="cap5">
+  <h1>CAPÍTULO 5 – EXERCÍCIOS, GLOSSÁRIO E REFERÊNCIAS</h1>
+
+  <h2 id="5-1">5.1 Exercícios – Revisão de Conhecimentos</h2>
+  <h3>Múltipla Escolha</h3>
+  <ol>
+    <li>Função do 1º estágio: <strong>vencer gravidade e arrasto</strong>.</li>
+    <li>Grandeza de eficiência do motor: <strong>Isp</strong>.</li>
+    <li>Equação de Tsiolkovsky relaciona: <strong>Δv</strong>.</li>
+    <li>Por que usar estágios? <strong>Reduzir massa ao longo do voo</strong>.</li>
+    <li>Vantagem de lançar no Equador: <strong>crédito de rotação</strong>.</li>
+  </ol>
+
+  <h3>Verdadeiro ou Falso</h3>
+  <ol>
+    <li>(V) Carga útil costuma ser &lt; 10% da massa total.</li>
+    <li>(F) Isp é medido em m/s.</li>
+    <li>(V) Δv é variação de velocidade necessária.</li>
+    <li>(F) MR maior significa menos combustível.</li>
+    <li>(V) Rotação da Terra ajuda no lançamento.</li>
+  </ol>
+
+  <h2 id="5-2">5.2 Glossário</h2>
+  <ul>
+    <li><strong>Astronáutica:</strong> ciência e tecnologia de veículos espaciais.</li>
+    <li><strong>Δv:</strong> variação de velocidade necessária.</li>
+    <li><strong>Isp:</strong> eficiência do motor (s).</li>
+    <li><strong>MR:</strong> m₀/m_f, razão de massas.</li>
+    <li><strong>Payload:</strong> carga útil.</li>
+    <li><strong>ε:</strong> fração estrutural.</li>
+    <li><strong>Crédito de rotação:</strong> velocidade extra por lançar a leste.</li>
+    <li><strong>Órbita:</strong> trajetória ao redor de um corpo celeste.</li>
+    <li><strong>Escape:</strong> velocidade mínima para sair do campo gravitacional.</li>
+    <li><strong>Estágio:</strong> seção descartável do foguete.</li>
+  </ul>
+
+  <h2 id="5-3">5.3 Referências Bibliográficas</h2>
+  <ul>
+    <li>NASA – <em>Rocket Propulsion Elements</em>, George P. Sutton, 9ª ed., Wiley, 2016.</li>
+    <li>ESA – <em>Basics of Space Flight</em>, Educational Series, 2022.</li>
+    <li>National Aeronautics and Space Administration – <a href="https://www.nasa.gov">www.nasa.gov</a></li>
+    <li>European Space Agency – <a href="https://www.esa.int">www.esa.int</a></li>
+    <li>Larson, W. J.; Prandl, J. R. – <em>Space Mission Analysis and Design</em>, Microcosm Press, 2021.</li>
+    <li>Braeunig, R. A. – <em>Rocket &amp; Space Technology</em> – Orbital Mechanics. <a href="https://www.braeunig.us">www.braeunig.us</a></li>
+  </ul>
+
+  <p class="foot muted">Autor: Prof. William Mendonça – Química e Física • A4 • Margens 2 cm • Calibri 12 • Sumário clicável</p>
+</section>
+
+</body>
+</html>
